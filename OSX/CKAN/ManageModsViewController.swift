@@ -52,12 +52,19 @@ class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTable
                 kerbalstuff: nil))
     ]
     
+    var displayedMods: [CkanModule]
+    
+    required init?(coder: NSCoder) {
+        displayedMods = mods
+        super.init(coder: coder)
+    }
+    
     @objc func numberOfRowsInTableView(tableView: NSTableView) -> Int {
-        return mods.count
+        return displayedMods.count
     }
     
     func tableView(tableView: NSTableView, objectValueForTableColumn tableColumn: NSTableColumn?, row: Int) -> AnyObject? {
-        let val = mods[row]
+        let val = displayedMods[row]
         
         if let col = tableColumn?.headerCell.stringValue {
             switch col {
@@ -88,7 +95,7 @@ class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTable
     }
     
     func tableView(tableView: NSTableView, setObjectValue object: AnyObject?, forTableColumn tableColumn: NSTableColumn?, row: Int) {
-        let val = mods[row]
+        let val = displayedMods[row]
         
         if let newVal = object as? Bool, let col = tableColumn?.headerCell.stringValue {
             switch col {
@@ -105,12 +112,36 @@ class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTable
     @objc func tableViewSelectionDidChange(notification: NSNotification) {
         if let tableView = notification.object as? NSTableView {
             if tableView.selectedRow >= 0 {
-                let modInfo = mods[tableView.selectedRow]
+                let modInfo = displayedMods[tableView.selectedRow]
                 
                 if let modInfoViewController = childViewControllers.first as? ModInfoViewController {
                     modInfoViewController.setModInfo(modInfo)
                 }
             }
+        }
+    }
+    
+    @IBAction func SearchFieldChanged(sender: NSSearchField) {
+        CombineFilters()
+        RefreshModTableData()
+    }
+    
+    func CombineFilters() {
+        let nameField = view.viewWithTag(10) as? NSSearchField
+        let authorsField = view.viewWithTag(11) as? NSSearchField
+        
+        let nameValue = nameField?.stringValue
+        let authorsValue = authorsField?.stringValue
+        
+        displayedMods = mods.filter({ module in
+            ModListSearch.NameSearch(module.name, searchValue: nameValue) &&
+                ModListSearch.AuthorsSearch(module.authors, searchValue: authorsValue)
+        })
+    }
+    
+    func RefreshModTableData() {
+        if let table = view.viewWithTag(5) as? NSTableView {
+            table.reloadData()
         }
     }
     

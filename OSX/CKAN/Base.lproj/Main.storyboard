@@ -782,7 +782,7 @@ Gw
                                     <action selector="LaunchClicked:" target="aVv-tU-jqn" id="0qR-6F-eji"/>
                                 </connections>
                             </button>
-                            <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g3R-Ud-QXO">
+                            <searchField wantsLayer="YES" verticalHuggingPriority="750" tag="10" translatesAutoresizingMaskIntoConstraints="NO" id="g3R-Ud-QXO">
                                 <rect key="frame" x="0.0" y="552" width="182" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="182" id="AT9-JO-h3Y"/>
@@ -793,6 +793,9 @@ Gw
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </searchFieldCell>
+                                <connections>
+                                    <action selector="SearchFieldChanged:" target="aVv-tU-jqn" id="LX2-ZL-jxl"/>
+                                </connections>
                             </searchField>
                             <button toolTip="Add Available Updates" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-HU-fA6">
                                 <rect key="frame" x="76" y="582" width="32" height="32"/>
@@ -1054,7 +1057,7 @@ Gw
                                     <real value="250"/>
                                 </holdingPriorities>
                             </splitView>
-                            <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XIx-XP-Yvf">
+                            <searchField wantsLayer="YES" verticalHuggingPriority="750" tag="11" translatesAutoresizingMaskIntoConstraints="NO" id="XIx-XP-Yvf">
                                 <rect key="frame" x="238" y="552" width="182" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="182" id="513-3K-P46"/>
@@ -1065,6 +1068,9 @@ Gw
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </searchFieldCell>
+                                <connections>
+                                    <action selector="SearchFieldChanged:" target="aVv-tU-jqn" id="JWH-sl-7yv"/>
+                                </connections>
                             </searchField>
                         </subviews>
                         <constraints>
