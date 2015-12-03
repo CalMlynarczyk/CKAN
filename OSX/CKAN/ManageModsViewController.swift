@@ -114,6 +114,19 @@ class ManageModsViewController: NSViewController, NSTableViewDataSource, NSTable
         }
     }
     
+    @IBAction func LaunchClicked(sender: NSButton) {
+        LaunchKSP()
+    }
+    
+    func LaunchKSP() {
+        let args = [NSHomeDirectory() + "/Applications/Kerbal Space Program.app/Contents/MacOS/run.sh"]
+        NSTask.launchedTaskWithLaunchPath("/bin/sh", arguments: args)
+        
+        // Can not use the following because the app launcher Squad ships for
+        // OS X is broken
+        //NSWorkspace.sharedWorkspace().launchApplication("Kerbal Space Program")
+    }
+    
     @IBAction func RefreshClicked(sender: NSButton) {
         
     }

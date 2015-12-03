@@ -778,6 +778,9 @@ Gw
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="LaunchClicked:" target="aVv-tU-jqn" id="0qR-6F-eji"/>
+                                </connections>
                             </button>
                             <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g3R-Ud-QXO">
                                 <rect key="frame" x="0.0" y="552" width="182" height="22"/>
