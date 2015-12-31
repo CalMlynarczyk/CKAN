@@ -20,6 +20,7 @@
 		1020793F1BFD3347006D713F /* UpdatingReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1020793E1BFD3347006D713F /* UpdatingReposViewController.swift */; };
 		108BC0591BEFB8E8003BF380 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 108BC0581BEFB8E8003BF380 /* Credits.rtf */; };
 		1097986C1BEED20300AD35B4 /* CkanModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097986B1BEED20300AD35B4 /* CkanModule.swift */; };
+		10F7FF1B1C10F6160014AF30 /* UserPreferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F7FF1A1C10F6160014AF30 /* UserPreferences.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		108BC0581BEFB8E8003BF380 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		1097986B1BEED20300AD35B4 /* CkanModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CkanModule.swift; sourceTree = "<group>"; };
 		10B1ABC31BED3F3200B841D7 /* CKAN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CKAN-Bridging-Header.h"; sourceTree = "<group>"; };
+		10F7FF1A1C10F6160014AF30 /* UserPreferences.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPreferences.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				1020793C1BFD32F4006D713F /* ChangesetViewController.swift */,
 				1020793E1BFD3347006D713F /* UpdatingReposViewController.swift */,
 				10124FD71BFE6E330063D216 /* ModListSearch.swift */,
+				10F7FF1A1C10F6160014AF30 /* UserPreferences.storyboard */,
 			);
 			path = CKAN;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				100DDB2F1BEA5A8200628049 /* Assets.xcassets in Resources */,
 				108BC0591BEFB8E8003BF380 /* Credits.rtf in Resources */,
+				10F7FF1B1C10F6160014AF30 /* UserPreferences.storyboard in Resources */,
 				100DDB321BEA5A8200628049 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
