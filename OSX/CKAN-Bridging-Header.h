@@ -13,5 +13,7 @@
 //#include <mono/metadata/metadata.h>
 //#include <mono/metadata/assembly.h>
 //#include <mono/metadata/debug-helpers.h>
+#include "RHPreferences.framework/Headers/RHPreferences.h"
+#include "RHPreferences.framework/Headers/RHPreferencesWindowController.h"
 
 #endif /* CKAN_Bridging_Header_h */

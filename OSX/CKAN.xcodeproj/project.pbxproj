@@ -18,9 +18,11 @@
 		1020793B1BFD3278006D713F /* ModInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1020793A1BFD3278006D713F /* ModInfoViewController.swift */; };
 		1020793D1BFD32F4006D713F /* ChangesetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1020793C1BFD32F4006D713F /* ChangesetViewController.swift */; };
 		1020793F1BFD3347006D713F /* UpdatingReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1020793E1BFD3347006D713F /* UpdatingReposViewController.swift */; };
+		1034C6FA1C124ABB00ADA1F0 /* RHPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F7FF1C1C1134190014AF30 /* RHPreferences.framework */; };
 		108BC0591BEFB8E8003BF380 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 108BC0581BEFB8E8003BF380 /* Credits.rtf */; };
 		1097986C1BEED20300AD35B4 /* CkanModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097986B1BEED20300AD35B4 /* CkanModule.swift */; };
 		10F7FF1B1C10F6160014AF30 /* UserPreferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F7FF1A1C10F6160014AF30 /* UserPreferences.storyboard */; };
+		10F7FF1D1C1134190014AF30 /* RHPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F7FF1C1C1134190014AF30 /* RHPreferences.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,7 @@
 		1097986B1BEED20300AD35B4 /* CkanModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CkanModule.swift; sourceTree = "<group>"; };
 		10B1ABC31BED3F3200B841D7 /* CKAN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CKAN-Bridging-Header.h"; sourceTree = "<group>"; };
 		10F7FF1A1C10F6160014AF30 /* UserPreferences.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserPreferences.storyboard; sourceTree = "<group>"; };
+		10F7FF1C1C1134190014AF30 /* RHPreferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RHPreferences.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F7FF1D1C1134190014AF30 /* RHPreferences.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1034C6FA1C124ABB00ADA1F0 /* RHPreferences.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +104,7 @@
 				100DDB3B1BEA5A8200628049 /* CKANTests */,
 				100DDB461BEA5A8200628049 /* CKANUITests */,
 				100DDB281BEA5A8200628049 /* Products */,
+				10F7FF1C1C1134190014AF30 /* RHPreferences.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -426,6 +432,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				"HEADER_SEARCH_PATHS[sdk=macosx*]" = "/usr/local/include/mono-2.0/**";
 				INFOPLIST_FILE = CKAN/Info.plist;
@@ -453,6 +460,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				"HEADER_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = CKAN/Info.plist;
@@ -498,6 +506,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CKANUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KSP-CKAN.CKANUITests";
@@ -511,6 +523,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CKANUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KSP-CKAN.CKANUITests";
