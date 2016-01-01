@@ -18,6 +18,7 @@
 		1020793B1BFD3278006D713F /* ModInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1020793A1BFD3278006D713F /* ModInfoViewController.swift */; };
 		1020793D1BFD32F4006D713F /* ChangesetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1020793C1BFD32F4006D713F /* ChangesetViewController.swift */; };
 		1020793F1BFD3347006D713F /* UpdatingReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1020793E1BFD3347006D713F /* UpdatingReposViewController.swift */; };
+		1034C6F91C12499000ADA1F0 /* UserPreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034C6F81C12499000ADA1F0 /* UserPreferencesWindow.swift */; };
 		1034C6FA1C124ABB00ADA1F0 /* RHPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F7FF1C1C1134190014AF30 /* RHPreferences.framework */; };
 		108BC0591BEFB8E8003BF380 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 108BC0581BEFB8E8003BF380 /* Credits.rtf */; };
 		1097986C1BEED20300AD35B4 /* CkanModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097986B1BEED20300AD35B4 /* CkanModule.swift */; };
@@ -61,6 +62,7 @@
 		1020793A1BFD3278006D713F /* ModInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModInfoViewController.swift; sourceTree = "<group>"; };
 		1020793C1BFD32F4006D713F /* ChangesetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangesetViewController.swift; sourceTree = "<group>"; };
 		1020793E1BFD3347006D713F /* UpdatingReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatingReposViewController.swift; sourceTree = "<group>"; };
+		1034C6F81C12499000ADA1F0 /* UserPreferencesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferencesWindow.swift; sourceTree = "<group>"; };
 		108BC0581BEFB8E8003BF380 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		1097986B1BEED20300AD35B4 /* CkanModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CkanModule.swift; sourceTree = "<group>"; };
 		10B1ABC31BED3F3200B841D7 /* CKAN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CKAN-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				1020793E1BFD3347006D713F /* UpdatingReposViewController.swift */,
 				10124FD71BFE6E330063D216 /* ModListSearch.swift */,
 				10F7FF1A1C10F6160014AF30 /* UserPreferences.storyboard */,
+				1034C6F81C12499000ADA1F0 /* UserPreferencesWindow.swift */,
 			);
 			path = CKAN;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				102079391BFD3239006D713F /* ManageModsViewController.swift in Sources */,
 				1020793D1BFD32F4006D713F /* ChangesetViewController.swift in Sources */,
 				1097986C1BEED20300AD35B4 /* CkanModule.swift in Sources */,
+				1034C6F91C12499000ADA1F0 /* UserPreferencesWindow.swift in Sources */,
 				100DDB2D1BEA5A8200628049 /* ViewController.swift in Sources */,
 				100DDB2B1BEA5A8200628049 /* AppDelegate.swift in Sources */,
 				1020793F1BFD3347006D713F /* UpdatingReposViewController.swift in Sources */,
