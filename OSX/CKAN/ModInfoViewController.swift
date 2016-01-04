@@ -75,7 +75,7 @@ class ModInfoViewController: NSTabViewController {
     }
     
     func setContentsView(mod: CkanModule, viewController: NSViewController) {
-        let outlineView = viewController.view.viewWithTag(1)
+        //let outlineView = viewController.view.viewWithTag(1)
         
         mod.contents.forEach({ fileName in
             
@@ -83,7 +83,7 @@ class ModInfoViewController: NSTabViewController {
     }
     
     func setRelationshipsView(mod: CkanModule, viewController: NSViewController) {
-        let outlineView = viewController.view.viewWithTag(1)
+        //let outlineView = viewController.view.viewWithTag(1)
         
         mod.contents.forEach({ dependency in
             viewController.view.viewWithTag(1)
