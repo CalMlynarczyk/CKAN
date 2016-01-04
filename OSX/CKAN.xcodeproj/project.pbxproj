@@ -24,6 +24,7 @@
 		103B594D1C39ECCF002C9377 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 103B594C1C39ECCF002C9377 /* Settings.xib */; };
 		103B594F1C39ED05002C9377 /* Installations.xib in Resources */ = {isa = PBXBuildFile; fileRef = 103B594E1C39ED05002C9377 /* Installations.xib */; };
 		103B59511C39F106002C9377 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B59501C39F106002C9377 /* SettingsViewController.swift */; };
+		103B59531C3A2125002C9377 /* RHPreferences.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10F7FF1C1C1134190014AF30 /* RHPreferences.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		108BC0591BEFB8E8003BF380 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 108BC0581BEFB8E8003BF380 /* Credits.rtf */; };
 		1097986C1BEED20300AD35B4 /* CkanModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097986B1BEED20300AD35B4 /* CkanModule.swift */; };
 		10F7FF1D1C1134190014AF30 /* RHPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F7FF1C1C1134190014AF30 /* RHPreferences.framework */; };
@@ -45,6 +46,20 @@
 			remoteInfo = CKAN;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		103B59541C3A2125002C9377 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				103B59531C3A2125002C9377 /* RHPreferences.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		100DDB271BEA5A8200628049 /* CKAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +200,7 @@
 				100DDB231BEA5A8200628049 /* Sources */,
 				100DDB241BEA5A8200628049 /* Frameworks */,
 				100DDB251BEA5A8200628049 /* Resources */,
+				103B59541C3A2125002C9377 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,7 +389,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -417,7 +433,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
