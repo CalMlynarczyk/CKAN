@@ -11,7 +11,7 @@ import Foundation
 class UserPreferencesWindow: RHPreferencesWindowController {
     var _windowTitle = "Hola"
     var _toolbar: NSToolbar = NSToolbar()
-    var _viewControllers: [AnyObject] = []
+    var _viewControllers: [AnyObject] = [SettingsViewController()]
     var _selectedIndex: UInt = 0
     var _selectedViewController: NSViewController = NSViewController()
     
