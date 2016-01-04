@@ -23,6 +23,7 @@
 		103B594B1C39EC3B002C9377 /* Plugins.xib in Resources */ = {isa = PBXBuildFile; fileRef = 103B594A1C39EC3B002C9377 /* Plugins.xib */; };
 		103B594D1C39ECCF002C9377 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 103B594C1C39ECCF002C9377 /* Settings.xib */; };
 		103B594F1C39ED05002C9377 /* Installations.xib in Resources */ = {isa = PBXBuildFile; fileRef = 103B594E1C39ED05002C9377 /* Installations.xib */; };
+		103B59511C39F106002C9377 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B59501C39F106002C9377 /* SettingsViewController.swift */; };
 		108BC0591BEFB8E8003BF380 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 108BC0581BEFB8E8003BF380 /* Credits.rtf */; };
 		1097986C1BEED20300AD35B4 /* CkanModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097986B1BEED20300AD35B4 /* CkanModule.swift */; };
 		10F7FF1D1C1134190014AF30 /* RHPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F7FF1C1C1134190014AF30 /* RHPreferences.framework */; };
@@ -68,6 +69,7 @@
 		103B594A1C39EC3B002C9377 /* Plugins.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Plugins.xib; sourceTree = "<group>"; };
 		103B594C1C39ECCF002C9377 /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
 		103B594E1C39ED05002C9377 /* Installations.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Installations.xib; sourceTree = "<group>"; };
+		103B59501C39F106002C9377 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		108BC0581BEFB8E8003BF380 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		1097986B1BEED20300AD35B4 /* CkanModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CkanModule.swift; sourceTree = "<group>"; };
 		10B1ABC31BED3F3200B841D7 /* CKAN-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CKAN-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				103B594A1C39EC3B002C9377 /* Plugins.xib */,
 				103B594C1C39ECCF002C9377 /* Settings.xib */,
 				103B594E1C39ED05002C9377 /* Installations.xib */,
+				103B59501C39F106002C9377 /* SettingsViewController.swift */,
 			);
 			name = UserPreferences;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				102079391BFD3239006D713F /* ManageModsViewController.swift in Sources */,
 				1020793D1BFD32F4006D713F /* ChangesetViewController.swift in Sources */,
 				1097986C1BEED20300AD35B4 /* CkanModule.swift in Sources */,
+				103B59511C39F106002C9377 /* SettingsViewController.swift in Sources */,
 				1034C6F91C12499000ADA1F0 /* UserPreferencesWindow.swift in Sources */,
 				100DDB2D1BEA5A8200628049 /* ViewController.swift in Sources */,
 				100DDB2B1BEA5A8200628049 /* AppDelegate.swift in Sources */,
